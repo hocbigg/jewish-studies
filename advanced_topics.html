@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Advanced Jewish Studies: Specialization Tracks</title>
+  <meta name="description" content="Advanced Jewish Studies: Specialization Tracks curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/jewish-studies/advanced_topics.html">
+  <meta property="og:title" content="Advanced Jewish Studies: Specialization Tracks">
+  <meta property="og:description" content="Advanced Jewish Studies: Specialization Tracks curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/jewish-studies/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/jewish-studies/">Jewish Studies</a></li>
+      <li><a href="/jewish-studies/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="https://github.com/hocbigg/jewish-studies" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h1 id="advanced-jewish-studies-specialization-tracks">Advanced Jewish Studies: Specialization Tracks</h1>
+<p>Advanced study in Jewish Studies branches into several distinct subfields, each demanding specialized linguistic skills, critical methodologies, and historiographical frameworks. Learners are encouraged to select one or two tracks aligned with their academic or research interests rather than attempting to complete all five:</p>
+<ul>
+<li><strong>Advanced Biblical Philology and Textual History:</strong> Explores the textual transmission, ancient translations, Northwest Semitic context, and manuscript witnesses of the Hebrew Bible.</li>
+<li><strong>Talmudic Jurisprudence and Halakhic Development:</strong> Investigates Babylonian Aramaic philology, the mechanics of rabbinic argumentation, and the philosophy of Jewish legal systems.</li>
+<li><strong>Medieval Mediterranean and Sephardic-Mizrahi Civilizations:</strong> Focuses on the Cairo Genizah, Jewish life under Islam, and the intellectual and cultural flourishing of Sephardic Jewry.</li>
+<li><strong>Jewish Mysticism and Esoteric Traditions:</strong> Examines the historical, theosophical, and ecstatic developments of Kabbalah, the Zohar, and modern Hasidism.</li>
+<li><strong>Modern Jewish Transformations: Shoah, Zionism, and Diaspora:</strong> Analyzes the catastrophic rupture of the Holocaust, the intellectual origins of Jewish nationalism, modern Israeli society, and the evolution of the modern diaspora.</li>
+</ul>
+<hr>
+<h2 id="advanced-biblical-philology-and-textual-history">Advanced Biblical Philology and Textual History</h2>
+<p>Explores the transmission, ancient translations, and Northwest Semitic linguistic context of the Hebrew Bible, moving beyond standard Masoretic Hebrew to engage directly with variant manuscripts and ancient Near Eastern parallels.</p>
+<p>Biblical Aramaic Grammar: <a href="https://books.google.com/books?isbn=9781589830592" target="_blank" rel="noopener noreferrer">An Introduction to Aramaic by Frederick E. Greenspahn (Google Books)</a> - An inductive textbook designed for students with a foundation in Biblical Hebrew to master the grammar and syntax of biblical and early post-biblical Aramaic.</p>
+<p>Textual Criticism of the Hebrew Bible: <a href="https://books.google.com/books?isbn=9781506483481" target="_blank" rel="noopener noreferrer">Textual Criticism of the Hebrew Bible, 4th Edition by Emanuel Tov (Google Books)</a> - The definitive academic reference work on the history of the biblical text, detailing the relationships between the Masoretic Text, the Septuagint, the Samaritan Pentateuch, and the Dead Sea Scrolls.</p>
+<p>Comparative Ancient Near Eastern Literature: <a href="https://www.youtube.com/playlist?list=PL3gVw9xy6sXJ2-D7evAYuc42qgf2CeNbz" target="_blank" rel="noopener noreferrer">The Bible in Light of the Ancient Near East by Dr. Nili Samet (Bar-Ilan University / YouTube)</a> - A 10-lesson open university lecture course comparing biblical creation narratives, flood traditions, covenant law codes, and wisdom literature with Mesopotamian and Egyptian sources.</p>
+<p>Biblical Archaeology and the Babylonian Exile: <a href="https://www.coursera.org/learn/jerusalem" target="_blank" rel="noopener noreferrer">The Fall and Rise of Jerusalem by Prof. Oded Lipschits (Tel Aviv University / Coursera)</a> - A free-to-audit 6-module course examining the archaeological record and historical transformations of Judah under Neo-Babylonian and early Persian imperial rule.</p>
+<p>Second Temple Judaism and Qumran: <a href="https://books.google.com/books?isbn=9780567084682" target="_blank" rel="noopener noreferrer">The Meaning of the Dead Sea Scrolls by James C. VanderKam and Peter W. Flint (Google Books)</a> - A comprehensive academic synthesis of the archaeology, manuscript discoveries, and theological sectarianism of the Qumran community.</p>
+<h2 id="talmudic-jurisprudence-and-halakhic-development">Talmudic Jurisprudence and Halakhic Development</h2>
+<p>Dives into the linguistic mechanics of Jewish Babylonian Aramaic, the structural logic of Talmudic dialectics, and the conceptual philosophies governing the evolution of Jewish law.</p>
+<p>Rabbinic Aramaic Morphology: <a href="https://books.google.com/books?isbn=9781592644520" target="_blank" rel="noopener noreferrer">Grammar for Gemara and Targum Onkelos: An Introduction to Aramaic by Yitzhak Frank (Google Books)</a> - The primary practical grammar detailing Jewish Babylonian Aramaic verbal paradigms, syntactical constructions, and technical Talmudic vocabulary.</p>
+<p>Talmudic Dialectics and Legal Logic: <a href="https://books.google.com/books?isbn=9780521269483" target="_blank" rel="noopener noreferrer">The Talmudic Argument: A Study in Talmudic Reasoning and Methodology by Louis Jacobs (Google Books)</a> - A systematic academic study dissecting the structure of the Talmudic sugya, deductive and inductive argumentation, and the redactional work of the Stammaim.</p>
+<p>Jurisprudential Theory of Jewish Law: <a href="https://books.google.com/books?isbn=9780691184364" target="_blank" rel="noopener noreferrer">Halakhah: The Rabbinic Idea of Law by Chaim N. Saiman (Google Books)</a> - A legal scholar's analysis of how Halakhah functions as jurisprudence, intellectual discipline, and theological speculation.</p>
+<p>Epistemology of Halakhic Reasoning: <a href="https://books.google.com/books?isbn=9780684863726" target="_blank" rel="noopener noreferrer">The Halakhic Mind: An Essay on Jewish Tradition and Modern Thought by Joseph B. Soloveitchik (Google Books)</a> - A seminal philosophical work examining the cognitive framework, objective methodology, and distinct epistemology that underpin rabbinic legal analysis.</p>
+<h2 id="medieval-mediterranean-and-sephardic-mizrahi-civilizations">Medieval Mediterranean and Sephardic-Mizrahi Civilizations</h2>
+<p>Examines the social, economic, and intellectual flourishing of Jewish communities in the Islamic world, the documentary history of the Cairo Genizah, and the cultural trajectory of Iberian Jewry.</p>
+<p>Mediterranean Jewish Social History: <a href="https://books.google.com/books?isbn=9780520217348" target="_blank" rel="noopener noreferrer">A Mediterranean Society: An Abridgment in One Volume by S. D. Goitein, edited by Jacob Lassner (Google Books)</a> - The foundational, single-volume condensation of Goitein's monumental reconstruction of medieval Jewish economic life, communal structure, and domestic reality from the Cairo Genizah.</p>
+<p>The Judeo-Arabic Symbiosis: <a href="https://books.google.com/books?isbn=9780691160870" target="_blank" rel="noopener noreferrer">The Jews of Islam by Bernard Lewis (Google Books)</a> - The classic historical study tracing the legal status, cultural acculturation, and theological interactions of Jewish communities under Islamic rule from late antiquity through the Ottoman Empire.</p>
+<p>The Iberian Sephardic Experience: <a href="https://books.google.com/books?isbn=9780029115749" target="_blank" rel="noopener noreferrer">The Jews of Spain: A History of the Sephardic Experience by Jane S. Gerber (Google Books)</a> - A sweeping history of Iberian Jewry through the Golden Age, Christian reconquest, the trauma of the 1492 expulsion, and the establishment of the Western and Eastern Sephardic diasporas.</p>
+<p>Genizah Document Studies and Archival History: <a href="https://books.google.com/books?isbn=9780691156477" target="_blank" rel="noopener noreferrer">The Lost Archive: Traces of a Caliphate in a Cairo Synagogue by Marina Rustow (Google Books)</a> - An advanced study in documentary history demonstrating how Fatimid state documents preserved in the Genizah rewrite our understanding of medieval Middle Eastern bureaucracy and social history.</p>
+<h2 id="jewish-mysticism-and-esoteric-traditions">Jewish Mysticism and Esoteric Traditions</h2>
+<p>Traces Jewish esoteric thought through its foundational movements, including medieval Kabbalah, the theosophy of the Zohar, and the spiritual revivalism of Hasidism.</p>
+<p>Historiography of Academic Kabbalah: <a href="https://books.google.com/books?isbn=9780805210422" target="_blank" rel="noopener noreferrer">Major Trends in Jewish Mysticism by Gershom Scholem (Google Books)</a> - The foundational masterwork that inaugurated the modern academic study of Jewish mysticism, tracing its evolution from Merkavah mysticism through Sabbatean messianism.</p>
+<p>Phenomenology of Ecstatic and Theurgic Mysticism: <a href="https://books.google.com/books?isbn=9780300046991" target="_blank" rel="noopener noreferrer">Kabbalah: New Perspectives by Moshe Idel (Google Books)</a> - The critical counterweight to Scholem's historical model, emphasizing ecstatic techniques, unio mystica, and theurgic practices in classical and Renaissance Kabbalah.</p>
+<p>Theosophy and Hermeneutics of the Zohar: <a href="https://books.google.com/books?isbn=9780804744645" target="_blank" rel="noopener noreferrer">A Guide to the Zohar by Arthur Green (Google Books)</a> - An authoritative structural companion explaining the ten sefirot, mystical hermeneutics, and literary idioms of the central text of medieval Kabbalah.</p>
+<p>Hasidism and Modern Mystical Revival: <a href="https://books.google.com/books?isbn=9780691175157" target="_blank" rel="noopener noreferrer">Hasidism: A New History by David Biale, David Assaf, et al. (Google Books)</a> - A collaborative academic history of the Hasidic movement, synthesizing its theological innovations, charismatic leadership models, and socio-political dynamics from the 18th century to the present.</p>
+<h2 id="modern-jewish-transformations-shoah-zionism-and-diaspora">Modern Jewish Transformations: Shoah, Zionism, and Diaspora</h2>
+<p>Investigates the defining historical developments of the 19th and 20th centuries, including the destruction of European Jewry, the development of Zionist ideology, modern Israeli statehood, and the acculturation of the modern diaspora.</p>
+<p>Holocaust Ideology and the Final Solution: <a href="https://www.coursera.org/learn/holocaust-introduction-1" target="_blank" rel="noopener noreferrer">The Holocaust - An Introduction (I &amp; II) (Tel Aviv University and Yad Vashem / Coursera)</a> - A comprehensive, free-to-audit 6-week university sequence tracing Nazi ideology, ghettoization, the mechanics of mass extermination, and post-war memory.</p>
+<p>Integrated Holocaust Historiography: <a href="https://books.google.com/books?isbn=9780061971402" target="_blank" rel="noopener noreferrer">Nazi Germany and the Jews, 1933–1945: Abridged Edition by Saul Friedländer (Google Books)</a> - The Pulitzer Prize-winning history that integrates totalitarian state decision-making with the lived experiences, diaries, and voices of Jewish victims.</p>
+<p>Intellectual History of Zionism: <a href="https://books.google.com/books?isbn=9780827606227" target="_blank" rel="noopener noreferrer">The Zionist Idea: A Historical Analysis and Reader by Arthur Hertzberg (Google Books)</a> - The definitive intellectual anthology collecting primary texts and providing foundational analysis on political, cultural, socialist, and religious Zionist thought.</p>
+<p>Modern Israeli History and Society: <a href="https://www.coursera.org/learn/history-israel" target="_blank" rel="noopener noreferrer">The History of Modern Israel - Part I: From an Idea to a State by Prof. Eyal Naveh (Tel Aviv University / Coursera)</a> - A free-to-audit MOOC examining the geopolitical, cultural, and ideological developments from the early Zionist settlements to the founding of the State of Israel.</p>
+<p>The Modern Diaspora Experience: <a href="https://books.google.com/books?isbn=9780300109764" target="_blank" rel="noopener noreferrer">American Judaism: A History by Jonathan D. Sarna (Google Books)</a> - The definitive academic history tracing the institutional, theological, and cultural evolution of the largest diaspora Jewish community from colonial times to the 21st century.</p>
+    </article>
+  </main>
+
+</body>
+</html>
